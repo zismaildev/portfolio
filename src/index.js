@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Contents
@@ -13,7 +13,7 @@ import Educaction from './Contents/Educaction'
 import Portfolio from './Contents/Portfolio'
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="/portfolio" element={<Portfolio />} />
@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route path="/about" element={<About />} />
       <Route path="/educaction" element={<Educaction />} />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
