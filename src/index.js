@@ -7,16 +7,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Contents
-import Home from './Contents/Home'
 import Contact from './Contents/Contact'
 import About from './Contents/About'
 import Educaction from './Contents/Educaction'
+import Portfolio from './Contents/Portfolio'
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Portfolio />} />
+      <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/about" element={<About />} />
       <Route path="/educaction" element={<Educaction />} />
