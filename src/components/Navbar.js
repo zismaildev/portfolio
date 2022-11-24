@@ -1,7 +1,7 @@
 // Conponents
 import * as React from 'react';
 import Logo from '../logo.svg'
-import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 
 export default function NewNav() {
 
@@ -28,19 +28,12 @@ export default function NewNav() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                        </Nav>
+                        <Nav className="mr-auto">
+                        <Nav.Link href="/portfolio">Portfolio</Nav.Link>
                             <Nav.Link href="/contact">Contact</Nav.Link>
                             <Nav.Link href="/about">About</Nav.Link>
                             <Nav.Link href="/educaction">Educaction</Nav.Link>
-                        </Nav>
-                        <Nav className="mr-auto">
-                            <NavDropdown title="" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Payment</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Seting</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item onClick={handleLogout} style={{ color: "red" }}>Logout</NavDropdown.Item>
-                            </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

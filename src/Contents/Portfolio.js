@@ -1,10 +1,10 @@
 import React from 'react'
-import NavbarNavbarComp from '../Components/Navbar'
+import NewNav from '../Components/Navbar'
 
 export default function Portfolio() {
     return (
         <div>
-            <NavbarNavbarComp />
+            <NewNav />
             <h1>Portfolio</h1>
         </div>
     )

@@ -1,7 +1,11 @@
 import React from 'react'
+import NewNav from '../Components/Navbar'
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <NewNav />
+      <h1>Contact</h1>
+    </div>
   )
 }
